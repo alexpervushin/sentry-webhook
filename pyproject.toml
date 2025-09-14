@@ -1,0 +1,12 @@
+[project]
+name = "sentry-webhook"
+version = "0.1.0"
+description = "Sentry webhook receiver that forwards accepted events to NATS via FastStream (Litestar + Granian)."
+authors = [{ name = "Aleksandr Pervushin", email = "alexpervushin@icloud.com" }]
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "faststream[nats]>=0.5.48",
+    "granian>=2.5.3",
+    "litestar[standard]>=2.17.0",
+]
